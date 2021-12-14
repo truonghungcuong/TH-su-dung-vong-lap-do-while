@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapso" placeholder="Nhập vào số từ  1 -> 10">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="ketqua"></p>
+<script>
+    function kiemtra(){
+        let value=null;
+        do {
+            value=parseInt(document.getElementById("nhapso").value);
+        }while (value<1||value>10);
+        document.getElementById("ketqua").innerHTML="Số bạn vừa nhập là: "+ value;
+    }
+</script>
+</body>
+</html>
